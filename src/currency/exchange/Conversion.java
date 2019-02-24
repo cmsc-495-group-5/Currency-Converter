@@ -34,43 +34,43 @@ public class Conversion extends Converter {
             switch (s) {//check for a match
             case "USD":
                 num1 = amount * (Double.parseDouble(USD[toIndex][1]));
-                num2 = (Double.parseDouble(USD[toIndex][2]));
+                num2 = (Double.parseDouble(USD[toIndex][1]));
                 break;
             case "EUR":
                 num1 = amount * (Double.parseDouble(EUR[toIndex][1]));
-                num2 = (Double.parseDouble(EUR[toIndex][2]));
+                num2 = (Double.parseDouble(EUR[toIndex][1]));
                 break;
             case "IDR":
                 num1 = amount * (Double.parseDouble(IDR[toIndex][1]));
-                num2 = (Double.parseDouble(IDR[toIndex][2]));
+                num2 = (Double.parseDouble(IDR[toIndex][1]));
                 break;
             case "AUD":
                 num1 = amount * (Double.parseDouble(AUD[toIndex][1]));
-                num2 = (Double.parseDouble(AUD[toIndex][2]));
+                num2 = (Double.parseDouble(AUD[toIndex][1]));
                 break;
             case "CAD":
                 num1 = amount * (Double.parseDouble(CAD[toIndex][1]));
-                num2 = (Double.parseDouble(CAD[toIndex][2]));
+                num2 = (Double.parseDouble(CAD[toIndex][1]));
                 break;
             case "SGD":
                 num1 = amount * (Double.parseDouble(SGD[toIndex][1]));
-                num2 = (Double.parseDouble(SGD[toIndex][2]));
+                num2 = (Double.parseDouble(SGD[toIndex][1]));
                 break;
             case "JPY":
                 num1 = amount * (Double.parseDouble(JPY[toIndex][1]));
-                num2 = (Double.parseDouble(JPY[toIndex][2]));
+                num2 = (Double.parseDouble(JPY[toIndex][1]));
                 break;
             case "CNY":
                 num1 = amount * (Double.parseDouble(CNY[toIndex][1]));
-                num2 = (Double.parseDouble(CNY[toIndex][2]));
+                num2 = (Double.parseDouble(CNY[toIndex][1]));
                 break;
             case "ZAR":
                 num1 = amount * (Double.parseDouble(ZAR[toIndex][1]));
-                num2 = (Double.parseDouble(ZAR[toIndex][2]));
+                num2 = (Double.parseDouble(ZAR[toIndex][1]));
                 break;
             case "BRL":
                 num1 = amount * (Double.parseDouble(BRL[toIndex][1]));
-                num2 = (Double.parseDouble(BRL[toIndex][2]));
+                num2 = (Double.parseDouble(BRL[toIndex][1]));
                 break;
             default:
                 break;

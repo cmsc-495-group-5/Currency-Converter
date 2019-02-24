@@ -34,120 +34,168 @@ public class DatabaseFetch extends Converter {
                     if (names.size() == numbers.size() && names.size() == sales.size()) {
                         if (null != country) {
                             switch (country) {
-                                case "USD":
-                                    USD = new String[names.size() - 1][3];
+                            case "USD":
+                                USD = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        USD[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        USD[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        USD[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "EUR":
-                                    EUR = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                    USD[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                    USD[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                    USD[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "EUR":
+                                EUR = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        EUR[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        EUR[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        EUR[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "GBP":
-                                    GBP = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                    EUR[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                    EUR[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                    EUR[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "IDR":
+                            	IDR = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        GBP[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        GBP[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        GBP[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "INR":
-                                    INR = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	IDR[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	IDR[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	IDR[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "AUD":
+                            	AUD = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        INR[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        INR[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        INR[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "AUD":
-                                    AUD = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	AUD[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	AUD[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	AUD[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "CAD":
+                            	CAD = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        AUD[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        AUD[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        AUD[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "CAD":
-                                    CAD = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	CAD[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	CAD[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	CAD[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "SGD":
+                            	SGD = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        CAD[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        CAD[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        CAD[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                case "SGD":
-                                    SGD = new String[names.size() - 1][3];
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	SGD[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	SGD[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	SGD[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "JPY":
+                            	JPY = new String[names.size() - 1][3];
 
-                                    names.subList(1, names.size()).forEach((String text) -> {
-                                        SGD[i][0] = text;
-                                        i++;
-                                    });
-                                    numbers.subList(1, numbers.size()).forEach((text1) -> {
-                                        SGD[j][1] = text1;
-                                        j++;
-                                    });
-                                    sales.subList(1, sales.size()).forEach((text2) -> {
-                                        SGD[k][2] = text2;
-                                        k++;
-                                    });
-                                    break;
-                                default:
-                                    break;
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	JPY[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	JPY[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	JPY[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "CNY":
+                            	CNY = new String[names.size() - 1][3];
+
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	CNY[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	CNY[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	CNY[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "ZAR":
+                            	ZAR = new String[names.size() - 1][3];
+
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	ZAR[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	ZAR[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	ZAR[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            case "BRL":
+                            	BRL = new String[names.size() - 1][3];
+
+                                names.subList(1, names.size()).forEach((String text) -> {
+                                	BRL[i][0] = text;
+                                    i++;
+                                });
+                                numbers.subList(1, numbers.size()).forEach((text1) -> {
+                                	BRL[j][1] = text1;
+                                    j++;
+                                });
+                                sales.subList(1, sales.size()).forEach((text2) -> {
+                                	BRL[k][2] = text2;
+                                    k++;
+                                });
+                                break;
+                            default:
+                                break;
 
                             }
                         }

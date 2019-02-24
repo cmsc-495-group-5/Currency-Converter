@@ -32,36 +32,48 @@ public class Conversion extends Converter {
             }
 
             switch (s) {//check for a match
-                case "USD":
-                    num1 = amount * (Double.parseDouble(USD[toIndex][1]));
-                    num2 = (Double.parseDouble(USD[toIndex][1]));
-                    break;
-                case "EUR":
-                    num1 = amount * (Double.parseDouble(EUR[toIndex][1]));
-                    num2 = (Double.parseDouble(EUR[toIndex][1]));
-                    break;
-                case "GBP":
-                    num1 = amount * (Double.parseDouble(GBP[toIndex][1]));
-                    num2 = (Double.parseDouble(GBP[toIndex][1]));
-                    break;
-                case "INR":
-                    num1 = amount * (Double.parseDouble(INR[toIndex][1]));
-                    num2 = (Double.parseDouble(INR[toIndex][1]));
-                    break;
-                case "AUD":
-                    num1 = amount * (Double.parseDouble(AUD[toIndex][1]));
-                    num2 = (Double.parseDouble(AUD[toIndex][1]));
-                    break;
-                case "CAD":
-                    num1 = amount * (Double.parseDouble(CAD[toIndex][1]));
-                    num2 = (Double.parseDouble(CAD[toIndex][1]));
-                    break;
-                case "SGD":
-                    num1 = amount * (Double.parseDouble(SGD[toIndex][1]));
-                    num2 = (Double.parseDouble(SGD[toIndex][1]));
-                    break;
-                default:
-                    break;
+            case "USD":
+                num1 = amount * (Double.parseDouble(USD[toIndex][1]));
+                num2 = (Double.parseDouble(USD[toIndex][2]));
+                break;
+            case "EUR":
+                num1 = amount * (Double.parseDouble(EUR[toIndex][1]));
+                num2 = (Double.parseDouble(EUR[toIndex][2]));
+                break;
+            case "IDR":
+                num1 = amount * (Double.parseDouble(IDR[toIndex][1]));
+                num2 = (Double.parseDouble(IDR[toIndex][2]));
+                break;
+            case "AUD":
+                num1 = amount * (Double.parseDouble(AUD[toIndex][1]));
+                num2 = (Double.parseDouble(AUD[toIndex][2]));
+                break;
+            case "CAD":
+                num1 = amount * (Double.parseDouble(CAD[toIndex][1]));
+                num2 = (Double.parseDouble(CAD[toIndex][2]));
+                break;
+            case "SGD":
+                num1 = amount * (Double.parseDouble(SGD[toIndex][1]));
+                num2 = (Double.parseDouble(SGD[toIndex][2]));
+                break;
+            case "JPY":
+                num1 = amount * (Double.parseDouble(JPY[toIndex][1]));
+                num2 = (Double.parseDouble(JPY[toIndex][2]));
+                break;
+            case "CNY":
+                num1 = amount * (Double.parseDouble(CNY[toIndex][1]));
+                num2 = (Double.parseDouble(CNY[toIndex][2]));
+                break;
+            case "ZAR":
+                num1 = amount * (Double.parseDouble(ZAR[toIndex][1]));
+                num2 = (Double.parseDouble(ZAR[toIndex][2]));
+                break;
+            case "BRL":
+                num1 = amount * (Double.parseDouble(BRL[toIndex][1]));
+                num2 = (Double.parseDouble(BRL[toIndex][2]));
+                break;
+            default:
+                break;
             }
 
             String space = "&nbsp;&nbsp;&nbsp;&nbsp;";
@@ -104,51 +116,69 @@ public class Conversion extends Converter {
             String s = (String) fromCountry.getSelectedItem();//get the selected item
             toCountry.removeAllItems();
             switch (s) {//check for a match
-                case "USD":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(USD[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
+            case "USD":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(USD[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
 
-                    break;
-                case "EUR":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(EUR[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                case "GBP":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(GBP[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                case "INR":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(INR[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                case "AUD":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(AUD[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                case "CAD":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(CAD[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                case "SGD":
-                    for (int l = 0; l < 53; l++) {
-                        toCountry.addItem(SGD[l][0]);
-                    }
-                    toCountry.setSelectedIndex(0);
-                    break;
-                default:
-                    break;
+                break;
+            case "EUR":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(EUR[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "IDR":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(IDR[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "AUD":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(AUD[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "CAD":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(CAD[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "SGD":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(SGD[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "JPY":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(JPY[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "CNY":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(CNY[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "ZAR":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(ZAR[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            case "BRL":
+                for (int l = 0; l < 53; l++) {
+                    toCountry.addItem(BRL[l][0]);
+                }
+                toCountry.setSelectedIndex(0);
+                break;
+            default:
+                break;
             }
         } catch (NullPointerException ext) {
             statusLabel.setText("<html><center>Oops!  <br>Wait For Datbase to Load</center></html>");

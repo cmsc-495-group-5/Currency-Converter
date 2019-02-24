@@ -16,4 +16,11 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.jaunt</groupId>
+  		<artifactId>jaunt1.5.5</artifactId>
+  		<version>1.5.5</version>
+  	</dependency>
+  </dependencies>
 </project>

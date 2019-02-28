@@ -27,7 +27,7 @@ Error will appear if the entered amount of currency is not a positive number i.e
 
 ## Additional Information
 
-> In order to compile source code, JAUNT must be added to the Build Configuration.
+> The jaunt.jar file has been added as a maven dependency and therefore you should not have to modify the build configuration.
 
 
 # currencyconverter

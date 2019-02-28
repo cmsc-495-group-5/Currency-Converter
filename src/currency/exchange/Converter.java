@@ -15,7 +15,7 @@ public class Converter {
 
     //initialize variables
     protected static int i, j, k, color, loading = 0;
-    protected static String countryfrom[] = {"Select Country", "USD", "EUR", "IDR", "AUD", "CAD", "SGD", "JPY", "CNY", "ZAR", "BRL"};
+    protected static String countryList[] = {"Select Country", "USD", "EUR", "IDR", "AUD", "CAD", "SGD", "JPY", "CNY", "ZAR", "BRL"};
     protected static String[][] USD, EUR, IDR, AUD, CAD, SGD, JPY, CNY, ZAR, BRL;
     protected static java.util.Timer timer;
     protected static String timeUpadte = "";

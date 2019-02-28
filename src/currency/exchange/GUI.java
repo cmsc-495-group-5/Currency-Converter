@@ -25,11 +25,10 @@ public class GUI  extends Converter{
         from = new JLabel("  Convert From:   ");
         to = new JLabel("  Convert To:   ");
         amount = new JLabel("  Amount:  ");
-        fromCountry = new JComboBox(countryfrom);
+        fromCountry = new JComboBox(countryList);
         fromCountry.setBackground(Color.decode("#d2c5a1"));
 
-        toCountry = new JComboBox();
-        toCountry.addItem("Select Country");
+        toCountry = new JComboBox(countryList);
         toCountry.setBackground(Color.decode("#d2c5a1"));
 
         amountTxt = new JTextField(25);
@@ -37,10 +36,10 @@ public class GUI  extends Converter{
 
         submit = new JButton("Submit");
 
-        
+
          prepareGUI();
     }
-    
+
     //create GUI Jframe and add component
     protected void prepareGUI() {
         mainFrame = new JFrame("Country Currency Converter Application ");
@@ -51,7 +50,7 @@ public class GUI  extends Converter{
         mainFrame.setLayout(new FlowLayout());
 
         headerLabel = new JLabel("", JLabel.CENTER);
-        
+
         headerLabel.setFont(new Font("Century Gothic", Font.PLAIN, 45));
         headerLabel.setForeground(Color.DARK_GRAY);
         statusLabel = new JLabel("<html><center><span style=\"color:red\">Please wait....</span>  <br><span style=\"color:green\">Database Loading Real Time Records</span></center></html>", JLabel.CENTER);
@@ -121,11 +120,11 @@ public class GUI  extends Converter{
         gbc.ipady = 2;
         gbc.gridwidth = 2;
         panel.add(submit, gbc);
-        
+
         controlPanel.add(panel);
         mainFrame.setVisible(true);
-       
+
     }
-    
-    
+
+
 }

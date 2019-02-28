@@ -14,7 +14,7 @@ public class DatabaseFetch extends Converter {
 
     public int remoteFatch() {
         int t = 0;
-        for (String from1 : countryList) {
+        for (String from1 : countryfrom) {
             if (!"Select Country".equalsIgnoreCase(from1)) {
                 i = 0;
                 j = 0;
@@ -205,7 +205,7 @@ public class DatabaseFetch extends Converter {
                 } catch (JauntException e) {
 
                     if (testconnection == 0) {
-                        statusLabel.setText("<html><center><span style=\"color:Red;\">Connection Error: No Internet Connection<br>Unable To Connect To Database</span></center><html>");
+                        statusLabel.setText("<html><center><span style=\"color:Red;\">Connection Error: No Internet Connection<br>Unable To Connect To Database</span></center><html>");                        
                     } else {
                         statusLabel.setText("<html><center><span style=\"color:Red;\">Connection Error: Unable to Update Rates<br> Previous Rates Used</span></center><html>");
                     }

@@ -13,7 +13,8 @@ public class Conversion extends Converter {
         double num2 = 0;
 
         String s = (String) fromCountry.getSelectedItem();//get the selected item
-        int toIndex = (int) toCountry.getSelectedIndex();//get the selected index
+        String to = (String) toCountry.getSelectedItem();//get the selected index
+        int toIndex = 0;
         try {
             amount = Double.parseDouble(amountTxt.getText());
             if (!amountTxt.getText().contains(".**")) {
@@ -31,46 +32,181 @@ public class Conversion extends Converter {
                 throw new Error("<html><center>Error: <br>Only Positive Numbers & No Letters Please!</center><html>");
             }
 
+            switch(to){ //translate toCountry selection
+                case "USD":
+                    to = "US Dollar";
+                    break;
+                case "EUR":
+                    to = "Euro";
+                    break;
+                case "IDR":
+                    to = "Indian Rupee";
+                    break;
+                case "AUD":
+                    to = "Australian Dollar";
+                    break;
+                case "CAD":
+                    to = "Canadian Dollar";
+                    break;
+                case "SGD":
+                    to = "Singapore Dollar";
+                    break;
+                case "JPY":
+                    to = "Japanese Yen";
+                    break;
+                case "CNY":
+                    to = "Chinese Yuan Renminbi";
+                    break;
+                case "ZAR":
+                    to = "South African Rand";
+                    break;
+                case "BRL":
+                    to = "Brazilian Real";
+                    break;
+                default:
+                    break;
+            }
+
             switch (s) {//check for a match
             case "USD":
+                if ("US Dollar".equals(to)){
+                     num1 = amount;
+                     num2 = 0;
+                }
+                 else{//find index for selected toCountry
+                     for (int c = 0; c < 53; ++c){
+                         if (USD[c][0].equals(to))
+                             toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(USD[toIndex][1]));
                 num2 = (Double.parseDouble(USD[toIndex][1]));
+              }
                 break;
             case "EUR":
+                if ("Euro".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (EUR[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(EUR[toIndex][1]));
                 num2 = (Double.parseDouble(EUR[toIndex][1]));
+                }
                 break;
             case "IDR":
+                if ("Indian Rupee".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (IDR[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(IDR[toIndex][1]));
                 num2 = (Double.parseDouble(IDR[toIndex][1]));
+                }
                 break;
             case "AUD":
+                if ("Australian Dollar".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (AUD[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(AUD[toIndex][1]));
                 num2 = (Double.parseDouble(AUD[toIndex][1]));
+                }
                 break;
             case "CAD":
+                if ("Canadian Dollar".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (CAD[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(CAD[toIndex][1]));
                 num2 = (Double.parseDouble(CAD[toIndex][1]));
+                }
                 break;
             case "SGD":
+                if ("Singapore Dollar".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (SGD[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(SGD[toIndex][1]));
                 num2 = (Double.parseDouble(SGD[toIndex][1]));
+                }
                 break;
             case "JPY":
+                if ("Japanese Yen".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (JPY[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(JPY[toIndex][1]));
                 num2 = (Double.parseDouble(JPY[toIndex][1]));
+                }
                 break;
             case "CNY":
+                if ("Chinese Yuan Renminbi".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (CNY[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(CNY[toIndex][1]));
                 num2 = (Double.parseDouble(CNY[toIndex][1]));
+                }
                 break;
             case "ZAR":
+                if ("South African Rand".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (ZAR[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(ZAR[toIndex][1]));
                 num2 = (Double.parseDouble(ZAR[toIndex][1]));
+                }
                 break;
             case "BRL":
+                if ("Brazilian Real".equals(to)){
+                    num1 = amount;
+                    num2 = 0;
+                }
+                else{//find index for selected toCountry
+                    for (int c = 0; c < 53; ++c){
+                        if (BRL[c][0].equals(to))
+                            toIndex = c;
+                }
                 num1 = amount * (Double.parseDouble(BRL[toIndex][1]));
                 num2 = (Double.parseDouble(BRL[toIndex][1]));
+                }
                 break;
             default:
                 break;
@@ -105,83 +241,6 @@ public class Conversion extends Converter {
             statusLabel.setForeground(Color.red);
         }catch(ArrayIndexOutOfBoundsException e){
             statusLabel.setText("<html><center>Error:<br>Select Country to Convert To!</center><html>");
-            statusLabel.setForeground(Color.red);
-        }       
-
-    }
-
-    protected void countrySelect() {
-
-        try {
-            String s = (String) fromCountry.getSelectedItem();//get the selected item
-            toCountry.removeAllItems();
-            switch (s) {//check for a match
-            case "USD":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(USD[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-
-                break;
-            case "EUR":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(EUR[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "IDR":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(IDR[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "AUD":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(AUD[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "CAD":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(CAD[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "SGD":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(SGD[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "JPY":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(JPY[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "CNY":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(CNY[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "ZAR":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(ZAR[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            case "BRL":
-                for (int l = 0; l < 53; l++) {
-                    toCountry.addItem(BRL[l][0]);
-                }
-                toCountry.setSelectedIndex(0);
-                break;
-            default:
-                break;
-            }
-        } catch (NullPointerException ext) {
-            statusLabel.setText("<html><center>Oops!  <br>Wait For Datbase to Load</center></html>");
             statusLabel.setForeground(Color.red);
         }
 

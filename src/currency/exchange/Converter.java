@@ -15,7 +15,7 @@ public class Converter {
 
     //initialize variables
     protected static int i, j, k, color, loading = 0;
-    protected static String countryfrom[] = {"Select Country", "USD", "EUR", "IDR", "AUD", "CAD", "SGD", "JPY", "CNY", "ZAR", "BRL"};
+    protected static String countryList[] = {"Select Country", "USD", "EUR", "IDR", "AUD", "CAD", "SGD", "JPY", "CNY", "ZAR", "BRL"};
     protected static String[][] USD, EUR, IDR, AUD, CAD, SGD, JPY, CNY, ZAR, BRL;
     protected static java.util.Timer timer;
     protected static String timeUpadte = "";
@@ -35,7 +35,7 @@ public class Converter {
 
         //colors to change when database is upadated
         String activecolor[] = {"#008000", "#DAA520", "#666666", "#009900", "#0000ff", "#660066", "#9400D3", "#800080"};
-        //get gui 
+        //get gui
         GUI swingLayoutDemo = new GUI();
         swingLayoutDemo.showGridBagLayoutDemo();
         fromCountry.setEnabled(false);
@@ -47,7 +47,7 @@ public class Converter {
         timer = new java.util.Timer();
         timer.schedule(new TimerTask() {
             @Override
-            public void run() {              // do your work      
+            public void run() {              // do your work
                 int t = fetch.remoteFatch();
                 if (color > 7) {
                     color = 0;
@@ -88,13 +88,5 @@ public class Converter {
                 }
             }
         });
-
-        //attach event listener to select button
-        fromCountry.addActionListener((ActionEvent e) -> {
-            if (testconnection == 1) {
-                conversion.countrySelect();
-            }
-        });
-
     }
 }

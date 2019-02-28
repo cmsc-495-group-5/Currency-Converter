@@ -29,35 +29,5 @@ Error will appear if the entered amount of currency is not a positive number i.e
 
 > In order to compile source code, JAUNT must be added to the Build Configuration.
 
-## Revisions Table
-| Revision Number 	|      Date/Time     	|      Name      	|                        Description of Modification                        	|
-|:---------------:	|:------------------:	|:--------------:	|:-------------------------------------------------------------------------:	|
-|        1        	| 02/20/2019 12:30am 	| Sykes, Zachary 	|                 Conversion Class Label Formatting Changed                 	|
-|        2        	| 02/20/2019 12:30am 	| Sykes, Zachary 	|                  Converter Class Label Formatting Changed                 	|
-|        3        	| 02/20/2019 12:30am 	| Sykes, Zachary 	|                Databasefetch Class Label Formatting Changed               	|
-|        4        	|  02/20/2019 1:30am 	| Sykes, Zachary 	|                     GUI Class Label Formatting Changed                    	|
-|        5        	|  02/20/2019 1:30am 	| Sykes, Zachary 	| Added Introduction, Requirements, and Additional Information to README.md 	|
-|        6        	|  02/20/2019 1:30am 	| Sykes, Zachary 	|           Minor GUI Class Changes, Changing Header Font in GUI Class       	|
-|        7        	|  02/20/2019 1:30am		| Sykes, Zachary		|			Conversion Class Label Formating Changed							|
-|        8        	|  02/20/2019 2:30am 	| Sykes, Zachary 	|         Added GUI Initial and GUI After Submit PNG files to GitHub        	|
-|        9        	|  02/20/2019 2:30am 	| Sykes, Zachary 	|                       Formatting Update to README.md                      	|
-|        10        	|  02/20/2019 2:30am 	| Sykes, Zachary 	|            Formatting Changes to README.md (Issues with GitHub)           	|
-|        11       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|            Formatting Changes to README.md (Issues with GitHub)           	|
-|        12       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|                        Merge branch 'Sykes-Branch'                        	|
-|        13       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|            Formatting Changes to README.md (Issues with GitHub)           	|
-|        14       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|         Formatting Changes to README.md (Issues with GitHub Fixed)        	|
-|        15       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|     Minor GUI Color Changes to Conversion, Converter, and GUI Classes     	|
-|        16       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|                Delete GUI After Submit PNG from GitHub                  	|
-|        17       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|            Added GUI After Submit PNG to GitHub (new file)              	|
-|        18       	|  02/20/2019 2:30am 	| Sykes, Zachary 	|                        README.md Grammar Check                          	|
-|        19       	| 02/20/2019 10:30am 	| Sykes, Zachary 	|     Edited Conversion Class to add.00 to amount if user does not        	|
-|        20       	| 02/20/2019 11:30am 	| Sykes, Zachary 	|    Edited Conversion Class, fixed issue with amount and adding .00			|
-|        21       	| 02/20/2019 11:30pm 	| Sykes, Zachary 	|           Added REVISIONS.md to GitHub to test Table Layout					|
-|        22       	| 02/20/2019 11:30am 	| Sykes, Zachary 	| Removed REVISIONS.md from GitHub, Added Revisions Table to README.md		|
-|        23       	| 02/20/2019 20:30pm 	| Sykes, Zachary 	| 			 Added Revisions History to Table in README.md					|
-|        24       	| 02/20/2019 20:30pm 	| Sykes, Zachary 	| 				Update to Revision Table in README.md						|
-|        25      	| 02/22/2019 15:00pm 	| Sykes, Zachary 	| 					Added Java Files to GitHub								|
-
-
 
 # currencyconverter

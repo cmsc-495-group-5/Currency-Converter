@@ -29,7 +29,7 @@ public class Conversion extends Converter {
                 throw new Error("<html><center>Error: <br>Select Country to Convert To!</center><html>");
             } else if (amount < 0) {
                 // this gets caught in the catch block
-                throw new Error("<html><center>Error: <br>Only Positive Numbers <br> Please Try Again</center><html>");
+                throw new Error("<html><center>Error: <br>Only Positive Numbers <br>Please Try Again</center><html>");
             }
 
             switch(to){ //translate toCountry selection

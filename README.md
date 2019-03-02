@@ -27,6 +27,6 @@ Error will appear if the entered amount of currency is not a positive number i.e
 
 ## Additional Information
 
-> The jaunt.jar file has to be added in the build configuration to run in IDE
-> Executables for both Windows and Mac added
-> Runnable JAR file added
+>>* The jaunt.jar file has to be added in the build configuration to run in IDE
+>>* Executables for both Windows and Mac added
+>>* Runnable JAR file added

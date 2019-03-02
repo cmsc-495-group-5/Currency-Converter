@@ -1,4 +1,4 @@
-# Currency Converter
+#Country Currency Converter Application
 
 ## Introduction
 
@@ -21,13 +21,12 @@
 Error will appear if the entered amount of currency is not a positive number i.e., letters, negative numbers, etc.
 >>* The application will only allow amount entered to the hundredth decimal. If no decimal is used,“.00” is automatically added.
 >>* The application will list the time of the last database update after conversion.
->>* If application does not have internet connection when first opened an error will display informing the user it is unable to update rates do to connection error. “Error no internet connection, unable to update rates”.
+>>* If application does not have Internet connection when first opened an error will display informing the user it is unable to update rates do to connection error. “Error no Internet connection, unable to update rates”.
 >>* If unable to update exchange rates, the application will display an error message. “The data is not updated do to connection error, but used the previous data”.
 
 
 ## Additional Information
 
-> The jaunt.jar file has to be in the build configuration.
-
-
-# currencyconverter
+> The jaunt.jar file has to be added in the build configuration to run in IDE
+> Executables for both Windows and Mac added
+> Runnable JAR file added
